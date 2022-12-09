@@ -1,0 +1,361 @@
+/***************************color****************************/
+:root {
+  --primary-brand-IRIS: #4d5ae5;
+  --Dark-color-NAVY-BLUE: #2e2f42;
+  --secondary-brand-ACTIVE: #404bbf;
+  --Success-color-GREEN: #31d0aa;
+  --Text-color-SLATE: #434455;
+  --Subtle-Text-LIGHT-SLATE: #8e8f99;
+  --Accent-color-CORN-FLOVER: #e7e9fc;
+  --Light-color-Cloud: #f4f4fd;
+  --White: #ffffff;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--Dark-color-NAVY-BLUE);
+  background-color: var(--White);
+}
+
+/******Приховати заголовок******/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/******CONTAINER******/
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/******NO Pudding SECTION******/
+/***+ in section ''no padding***/
+.section.no-padding {
+  padding-top: -0;
+  padding-bottom: -0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/**********************************HEADER*************************/
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-container {
+  display: flex;
+}
+
+/***LOGO***/
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+.blue-color {
+  color: var(--primary-brand-IRIS);
+}
+.grey-color {
+  color: var(--Dark-color-NAVY-BLUE);
+}
+/****************NAVIGATION HEADER**************/
+.list-nav {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--Dark-color-NAVY-BLUE);
+}
+
+.list-nav:hover,
+.list-nav:focus {
+  color: var(--Text-color-SLATE);
+}
+.list-nav:active {
+  color: var(--primary-brand-IRIS);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: block;
+  display: flex;
+  margin-left: 77px;
+  gap: 40px;
+}
+
+.header-list-item {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/**************MAILTO-PHONE***************/
+.mailto,
+.phone {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--Text-color-SLATE);
+}
+.mailto:hover,
+.mailto:focus,
+.phone:hover,
+.phone:focus {
+  color: var(--primary-brand-IRIS);
+}
+
+.mailto:active,
+.phone:active {
+  color: var(--White);
+  background-color: var(--primary-brand-IRIS);
+}
+.list-mailto {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.list-mailto-phone{
+margin-left: 40px;
+}
+
+
+/******************************HERO******************************/
+.hero {
+  padding-top: 192px;
+  padding-bottom: 192px;
+  background-color: var(--Dark-color-NAVY-BLUE);
+}
+.hero-caption {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--White);
+  max-width: 492px;
+}
+
+/*************BUTTON HERO** PORFOLIO************/
+
+.button-hero {
+  padding: 16px 32px;
+  border-radius: 4px;
+  display: block;
+  margin: 48px auto 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.19;
+  background-color: var(--primary-brand-IRIS);
+  color: var(--White);
+  border: none;
+}
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--secondary-brand-ACTIVE);
+}
+.button-hero:active {
+  background-color: var(--primary-brand-IRIS);
+}
+
+/******************************FEATURES*************************/
+
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.features-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.features-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--Text-color-SLATE);
+}
+/************************************OUR GOB*************************/
+.gob {
+  padding-bottom: 120px;
+}
+
+.gob-title {
+  margin-bottom: 72px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+}
+.gob-list {
+  display: flex;
+  gap: 24px;
+}
+/************************************OUR TEAM************************/
+.user {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--Light-color-Cloud);
+}
+.user-heading {
+  margin-bottom: 72px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+}
+.user-list {
+  display: flex;
+  gap: 24px;
+}
+.user-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.user-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--Text-color-SLATE);
+}
+.user-wrap {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.list-foto {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  background-color: var(--White);
+}
+
+/*****************************************FOOTER***********************/
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--Dark-color-NAVY-BLUE);
+}
+.cloud-color {
+  color: var(--Accent-color-CORN-FLOVER);
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+.footer-text {
+  line-height: 1.5;
+  color: var(--Accent-color-CORN-FLOVER);
+  max-width: 264px;
+}
+
+/*************************PORTFOLIO*****************/
+/*************************PORTFOLIO*****************/
+.porfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.btn-list {
+  margin-bottom: 72px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.button-primary {
+  padding: 12px 24px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--primary-brand-IRIS);
+  color: var(--White);
+  border: none;
+}
+
+.button-primary:active {
+  background-color: var(--secondary-brand-ACTIVE);
+}
+
+.menu-link {
+  padding: 12px 24px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--Light-color-Cloud);
+  color: var(--primary-brand-IRIS);
+  border: 1px solid var(--Accent-color-CORN-FLOVER);
+  border-radius: 4px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  border: 1px solid var(--primary-brand-IRIS);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--primary-brand-IRIS);
+  color: var(--White);
+}
+
+.menu-link:active {
+  color: var(--White);
+  background-color: var(--primary-brand-IRIS);
+}
+/*****************************OUR WORDS*****************/
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.porfolio-list-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item-wrap {
+  border: 0.5px solid #f4f4fd;
+  padding: 32px 16px;
+  border-top: none;
+}
+
+.word-heading {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.word-img {
+  line-height: 1.5;
+  color: var(--Text-color-SLATE);
+}
