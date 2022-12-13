@@ -136,9 +136,21 @@ margin-left: 40px;
 
 /******************************HERO******************************/
 .hero {
+ 
+  max-width: 1440px;
   padding-top: 192px;
   padding-bottom: 192px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  url(../images/webstudio/people-office.jpg);
+  background-position: center;
+  background-size: cover;
   background-color: var(--Dark-color-NAVY-BLUE);
+  
+ 
+
+
 }
 .hero-caption {
   text-align: center;
