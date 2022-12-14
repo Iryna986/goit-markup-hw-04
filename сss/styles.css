@@ -272,9 +272,6 @@ img {
   background-color: var(--White);
 }
 
-
-
-
 .social-list {
   display: flex;
   justify-content: center;
@@ -293,16 +290,61 @@ img {
   background-color: var(--primary-brand-IRIS);
 }
 .social-list-link:hover,
-.social-list-link:focus{
-background-color: var(--Success-color-GREEN);
-fill: var(--Light-color-Cloud);
-
+.social-list-link:focus {
+  background-color: var(--Success-color-GREEN);
+  fill: var(--Light-color-Cloud);
 }
-.social-list-icon{
-fill: var(--Light-color-Cloud);
-
+.social-list-icon {
+  fill: var(--Light-color-Cloud);
 }
 
+/****************************************CUSTOMERS***********************/
+.section-title{
+  margin-bottom: 72px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+
+}
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.our-customers {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-list {
+  width: 168px;
+  height: 88px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.customers-link {
+  border: 1px solid var(--Subtle-Text-LIGHT-SLATE);
+  height: 100%;
+  width: 100%;
+  fill: var(--Subtle-Text-LIGHT-SLATE);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--primary-brand-IRIS);
+  border-radius: 1px solid var(--primary-brand-IRIS);
+  fill: currentColor;
+}
 
 /*****************************************FOOTER***********************/
 .footer {
