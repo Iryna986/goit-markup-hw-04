@@ -129,28 +129,22 @@ img {
   margin-left: auto;
   align-items: center;
 }
-.list-mailto-phone{
-margin-left: 40px;
+.list-mailto-phone {
+  margin-left: 40px;
 }
-
 
 /******************************HERO******************************/
 .hero {
- 
   max-width: 1440px;
   padding-top: 192px;
   padding-bottom: 192px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-  url(../images/webstudio/people-office.jpg);
+    url(../images/webstudio/people-office.jpg);
   background-position: center;
   background-size: cover;
   background-color: var(--Dark-color-NAVY-BLUE);
-  
- 
-
-
 }
 .hero-caption {
   text-align: center;
@@ -200,18 +194,16 @@ margin-left: 40px;
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.features-list-icon{
-width: 264px;
-height: 112px;
-margin-bottom: 32px; 
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: var(--Light-color-Cloud);
-border-radius: 4px;
+.features-list-icon {
+  width: 264px;
+  height: 112px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Light-color-Cloud);
+  border-radius: 4px;
 }
-
-
 
 .features-title {
   margin-bottom: 8px;
@@ -283,10 +275,33 @@ border-radius: 4px;
 
 
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 24px;
+}
 
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  fill: var(--Light-color-Cloud);
+  background-color: var(--primary-brand-IRIS);
+}
+.social-list-link:hover,
+.social-list-link:focus{
+background-color: var(--Success-color-GREEN);
+fill: var(--Light-color-Cloud);
 
+}
+.social-list-icon{
+fill: var(--Light-color-Cloud);
 
-
+}
 
 
 /*****************************************FOOTER***********************/
